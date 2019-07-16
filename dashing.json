@@ -1,0 +1,28 @@
+{
+    "name": "TensorFlow",
+    "package": "TensorFlow",
+    "index": "index.html",
+    "externalURL": "https://www.tensorflow.org/",
+    "selectors": {
+        "h1:first-of-type": [
+            {
+                "type": "Module",
+                "requiretext": "Module: ",
+                "regexp": "Module: ",
+                "replacement": ""
+            },
+            {
+                "type": "Function"
+            }
+        ],
+        "h3": {
+            "type": "Method",
+            "attr": "id"
+        }
+    },
+    "ignore": [
+        "Aliases:", "", "References", "Arguments", "Returns"
+    ],
+    "icon32x32": "icon@2x.png",
+    "icon16x16": "icon.png"
+}
