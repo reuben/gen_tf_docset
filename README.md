@@ -1,4 +1,4 @@
-Install [dashing](https://github.com/technosophos/dashing).
+Install [dashing 0.4.0](https://github.com/technosophos/dashing).
 
 You'll then need to create a case sensitive volume to work from, as TensorFlow
 has files that only differ by case. You can follow [this guide](https://coderwall.com/p/mgi8ja/case-sensitive-git-in-mac-os-x-like-a-pro) for example.
