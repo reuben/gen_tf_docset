@@ -13,8 +13,8 @@ $ source venv/bin/activate
 $ pip install -U setuptools wheel pip pygments misaka
 $ git clone --depth 1 --branch r1.15 https://github.com/tensorflow/docs tf-docs
 $ python gen.py tf-docs/site/en/api_docs/python out_dir
-$ pygmentize -S default -f html > out_dir/style.css
-$ cp dashing.json icon*.png out_dir
+$ cp dashing.json icon*.png style.css out_dir
+$ pygmentize -S default -f html >> out_dir/style.css
 $ cd out_dir
 $ dashing build
 ```
