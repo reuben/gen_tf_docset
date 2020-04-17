@@ -14,7 +14,7 @@ replace_with_style = '<p>page_type: reference<br>\n<style>{% include &quot;site-
 class HighlighterRenderer(misaka.HtmlRenderer):
     def blockcode(self, text, lang):
         if not lang:
-            lang = 'text'
+            lang = 'python'
         try:
             lexer = get_lexer_by_name(lang, stripall=True)
         except:
@@ -27,7 +27,7 @@ class HighlighterRenderer(misaka.HtmlRenderer):
 
 
 def main(markdown_root, html_root):
-    renderer = misaka.Markdown(HighlighterRenderer(flags=('hard-wrap',)),
+    renderer = misaka.Markdown(HighlighterRenderer(),
         extensions=('fenced-code', 'no-intra-emphasis', 'tables', 'autolink', 'space-headers', 'strikethrough', 'superscript'))
 
     # converted filename -> number of (case sensitive) conflicts

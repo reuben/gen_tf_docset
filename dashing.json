@@ -1,6 +1,6 @@
 {
-    "name": "TensorFlow",
-    "package": "TensorFlow",
+    "name": "TensorFlow 2",
+    "package": "TensorFlow 2",
     "index": "index.html",
     "externalURL": "https://www.tensorflow.org/",
     "selectors": {
