@@ -22,8 +22,8 @@ class HighlighterRenderer(misaka.HtmlRenderer):
         formatter = HtmlFormatter()
         return pygments.highlight(text, lexer, formatter)
 
-    def table(self, header, body):
-        return '<table class="table">\n' + header + '\n' + body + '\n</table>'
+    def table(self, content):
+        return '<table class="table">\n' + content + '\n</table>'
 
 
 def main(markdown_root, html_root):
@@ -71,7 +71,7 @@ def main(markdown_root, html_root):
                 rendered = style_link + rendered
                 fout.write(rendered)
 
-    shutil.copy(os.path.join(markdown_root, '_toc.yaml'), html_root)
+    shutil.copy(os.path.join(markdown_root, 'tf', '_toc.yaml'), html_root)
 
 
 if __name__ == '__main__':
